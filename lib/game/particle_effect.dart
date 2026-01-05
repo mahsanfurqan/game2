@@ -54,7 +54,7 @@ class ParticleEffect extends PositionComponent
   void render(Canvas canvas) {
     super.render(canvas);
 
-    final opacity = 1.0 - (lifetime / maxLifetime);
+    final opacity = (1.0 - (lifetime / maxLifetime)).clamp(0.0, 1.0);
 
     for (var particle in particles) {
       particle.render(canvas, opacity);
