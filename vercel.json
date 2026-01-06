@@ -1,6 +1,5 @@
 {
-  "buildCommand": "flutter build web --release",
+  "buildCommand": null,
   "outputDirectory": "build/web",
-  "framework": null,
-  "devCommand": "flutter run -d web-server --web-port 3000"
+  "framework": null
 }
